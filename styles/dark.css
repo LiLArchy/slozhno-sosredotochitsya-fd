@@ -1,16 +1,57 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --page-bg-color: var(--p-text-color-dark-theme);
+  --accent-color: var(--title-bg-color-dark-theme);
+  --title-color:  #db00ff;
+  --header-text-bg-color: var(--title-bg-color-dark-theme);
+  --header_text-color: var(--p-text-color-dark-theme);
+  --question-bg-color: var(--p-text-color-dark-theme);
+  --question-color: var(--title-bg-color-dark-theme);
+  --answer-title-bg-color: var(--title-bg-color-dark-theme);
+  --answer-title-color: var(--p-text-color-dark-theme);
+  --answer-text-bg-color: var(--p-text-color-dark-theme);
+  --answer-text-color: #f1b2ce;
+  --advice-title-bg-color: var(--title-bg-color-dark-theme);
+  --advice-title-color: var(--p-text-color-dark-theme);
+  --button-color: var(--title-bg-color-dark-theme);
+  --rec-color: var(--title-bg-color-dark-theme);
+  --border-color-opacity: #FF007066;
+  --background-image:  url("../images/cover-image-dark.png");
+  --deco-color: var(--title-bg-color-dark-theme);
+
 }
 
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+@media (prefers-color-scheme: dark) {
+:root {
+  --page-bg-color: var(--p-text-color-dark-theme);
+  --accent-color: var(--title-bg-color-dark-theme);
+  --title-color:  #db00ff;
+  --header-text-bg-color: var(--title-bg-color-dark-theme);
+  --header-text-color: var(--p-text-color-dark-theme);
+  --question-bg-color: var(--p-text-color-dark-theme);
+  --question-color: var(--title-bg-color-dark-theme);
+  --answer-title-bg-color: var(--title-bg-color-dark-theme);
+  --answer-title-color: var(--p-text-color-dark-theme);
+  --answer-text-bg-color: var(--p-text-color-dark-theme);
+  --answer-text-color: #f1b2ce;
+  --advice-title-bg-color: var(--title-bg-color-dark-theme);
+  --advice-title-color: var(--p-text-color-dark-theme);
+  --button-color: var(--title-bg-color-dark-theme);
+  --rec-color: var(--title-bg-color-dark-theme);
+  --border-color-opacity: #FF007066;
+  --border-color-opacity: #FF007066;
+  --background-image:  url("../images/cover-image-dark.png");
+  --deco-color: var(--title-bg-color-dark-theme);
+}
+
+.rec_empty::before,
+.rec_empty::after {
+  display: inline-block;
+}
+
+}
+
+.theme-dark .rec_empty::before,
+.theme-dark .rec_empty::after {
+display: inline-block;
 }
