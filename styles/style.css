@@ -340,8 +340,7 @@
 
   .section_how { 
     grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-    'question_how answers_how';
+    grid-template-areas:'question_how answers_how';
     gap: 20px;
     margin-top: 61px;
   }
