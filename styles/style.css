@@ -18,7 +18,6 @@
   position: relative;
   min-block-size: 668px;
   block-size: 100vh;
-  max-block-size: 768px;
   padding-inline: var(--ofst, 10px);
 }
 
@@ -207,7 +206,6 @@
   align-items: center;
   block-size: 100vh;
   min-block-size: 668px;
-  max-block-size: 768px;
 }
 
 .footer-headline {
@@ -393,6 +391,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--ofst, 20px);
+  }
+
+  .header {
+    max-block-size: 768px;
+  }
+
+  .footer {
+    max-block-size: 768px;
   }
 
   .text_container .card-article {
