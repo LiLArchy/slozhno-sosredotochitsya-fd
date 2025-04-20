@@ -1,57 +1,13 @@
-
 :root.theme-dark {
-  --page-bg-color: var(--p-text-color-dark-theme);
-  --accent-color: var(--title-bg-color-dark-theme);
-  --title-color:  #db00ff;
-  --header-text-bg-color: var(--title-bg-color-dark-theme);
-  --header_text-color: var(--p-text-color-dark-theme);
-  --question-bg-color: var(--p-text-color-dark-theme);
-  --question-color: var(--title-bg-color-dark-theme);
-  --answer-title-bg-color: var(--title-bg-color-dark-theme);
-  --answer-title-color: var(--p-text-color-dark-theme);
-  --answer-text-bg-color: var(--p-text-color-dark-theme);
-  --answer-text-color: #f1b2ce;
-  --advice-title-bg-color: var(--title-bg-color-dark-theme);
-  --advice-title-color: var(--p-text-color-dark-theme);
-  --button-color: var(--title-bg-color-dark-theme);
-  --rec-color: var(--title-bg-color-dark-theme);
-  --border-color-opacity: #FF007066;
-  --background-image:  url("../images/cover-image-dark.png");
-  --deco-color: var(--title-bg-color-dark-theme);
-
+  --main-text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --button-hov-color: #ff007066;
+  --dec_el_color: #ff0070;
+  --headline-color: #db00ff;
+  --decor-text-color: #000028;
+  --bg-img: url("../images/cover-image-dark.png");
+  --bckg-color: #000028;
 }
-
-@media (prefers-color-scheme: dark) {
-:root {
-  --page-bg-color: var(--p-text-color-dark-theme);
-  --accent-color: var(--title-bg-color-dark-theme);
-  --title-color:  #db00ff;
-  --header-text-bg-color: var(--title-bg-color-dark-theme);
-  --header-text-color: var(--p-text-color-dark-theme);
-  --question-bg-color: var(--p-text-color-dark-theme);
-  --question-color: var(--title-bg-color-dark-theme);
-  --answer-title-bg-color: var(--title-bg-color-dark-theme);
-  --answer-title-color: var(--p-text-color-dark-theme);
-  --answer-text-bg-color: var(--p-text-color-dark-theme);
-  --answer-text-color: #f1b2ce;
-  --advice-title-bg-color: var(--title-bg-color-dark-theme);
-  --advice-title-color: var(--p-text-color-dark-theme);
-  --button-color: var(--title-bg-color-dark-theme);
-  --rec-color: var(--title-bg-color-dark-theme);
-  --border-color-opacity: #FF007066;
-  --border-color-opacity: #FF007066;
-  --background-image:  url("../images/cover-image-dark.png");
-  --deco-color: var(--title-bg-color-dark-theme);
-}
-
-.rec_empty::before,
-.rec_empty::after {
-  display: inline-block;
-}
-
-}
-
-.theme-dark .rec_empty::before,
-.theme-dark .rec_empty::after {
-display: inline-block;
+.theme-dark .header__rec-element {
+  display: block;
 }
