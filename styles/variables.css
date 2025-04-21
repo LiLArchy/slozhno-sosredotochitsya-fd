@@ -13,13 +13,13 @@
   --decor-text-color: #000028;
   --bg-img: url("../images/cover-image-dark.png");
   --bckg-color: #000028;
-  --page__row-gap: 40px;
+  --page-row-gap: 40px;
   --ofst: 10px;
 }
 
 @media (min-width: 768px) {
   :root {
-    --page__row-gap: 60px;
+    --page-row-gap: 60px;
     --ofst: 20px;
     --font-size-header-footer: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
