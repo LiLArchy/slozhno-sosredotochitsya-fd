@@ -29,6 +29,7 @@
 
 .header__rec-element::before {
   content: "REC";
+  font-size: var(--font-size-header-footer);
   color: var(--accent-color, #ff0070);
   line-height: 25px;
   padding-inline-end: 11px;
@@ -104,7 +105,7 @@
 .headline {
   justify-self: start;
   font-size: var(
-    --font-size_header-footer,
+    --font-size-header-footer,
     clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
   );
   font-weight: bold;
@@ -210,7 +211,7 @@
 
 .footer-headline {
   font-size: var(
-    --font-size_header-footer,
+    --font-size-header-footer,
     clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
   );
   font-weight: bold;
@@ -219,11 +220,6 @@
 }
 
 @media (min-width: 768px) {
-  :root {
-    --page__row-gap: 60px;
-    --ofst: 20px;
-    --font-size_header-footer: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
 
   .main {
     gap: 80px;
@@ -245,7 +241,7 @@
 
   .headline {
     font-size: var(
-      --font-size_header-footer,
+      --font-size-header-footer,
       clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
     );
   }
@@ -349,10 +345,6 @@
 }
 
 @media (min-width: 1024px) {
-  :root {
-    --font-size_header-footer: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --ofst: 20px;
-  }
 
   .header__theme-menu {
     justify-self: center;
@@ -367,7 +359,7 @@
 
   .headline {
     font-size: var(
-      --font-size_header-footer,
+      --font-size-header-footer,
       clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
     );
   }
@@ -391,14 +383,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--ofst, 20px);
-  }
-
-  .header {
-    max-block-size: 768px;
-  }
-
-  .footer {
-    max-block-size: 768px;
   }
 
   .text_container .card-article {
